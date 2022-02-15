@@ -1,0 +1,63 @@
+#hero_ser {
+  padding-top: 13rem;
+  overflow-x: hidden;
+  background: url("/static/images/fingerprint.png") no-repeat;
+  background-size: 75%;
+  background-position: 186% 100%;
+  @include media-breakpoint-down(md) {
+    padding-top: 5rem;
+  }
+  .container {
+    @include media-breakpoint-down(md) {
+      min-height: max-content;
+    }
+  }
+  .row {
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+    }
+  }
+  img {
+    position: absolute;
+    width: 145%;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    @include media-breakpoint-down(md) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 135%;
+    }
+  }
+}
+
+.cta_sec {
+  z-index: 10000;
+  font-family: $font_body;
+  padding: 2rem 15rem;
+  @include media-breakpoint-down(md) {
+    padding: 0 2rem;
+  }
+  h2 {
+    color: $color_primary;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  button {
+    margin-bottom: -4rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#white_pre {
+  margin-bottom: -11rem;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 5rem;
+  }
+}

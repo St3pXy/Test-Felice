@@ -1,0 +1,21 @@
+.dash {
+  width: 150px;
+  height: 1px;
+  background-color: white;
+  margin-bottom: 18px;
+  opacity: 0.6;
+  margin-right: 2px;
+  @include media-breakpoint-only(md) {
+    width: 50px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 30px;
+  }
+}
+.purple_text {
+  color: $color_primary;
+  font-family: $font_body;
+}
+.dash-purple {
+  background-color: $color_primary;
+}

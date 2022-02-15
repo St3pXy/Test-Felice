@@ -1,0 +1,216 @@
+html {
+  @include media-breakpoint-down(md) {
+    overflow-x: hidden;
+  }
+}
+#nav_header {
+  @include media-breakpoint-down(md) {
+    width: 100vw;
+    & .text-white {
+      font-size: 1rem;
+    }
+    & span.bar {
+      padding: 0 0.1rem;
+      width: 0px;
+    }
+  }
+}
+#fingerprint_bg {
+  background: url("/static/images/fingerprint.png") no-repeat;
+  height: 100%;
+  width: 40%;
+  background-size: 90%;
+  position: fixed;
+  z-index: 0;
+  background-position: right;
+  top: 5rem;
+  right: -3rem;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+#hero_cover {
+  height: 100%;
+  background: url("/static/images/SNIPES/hero-img.JPG") no-repeat;
+  background-size: 380%;
+  background-position: center;
+}
+.sidewise_text {
+  transform: rotate(-90deg);
+  position: relative;
+  top: -10%;
+  right: -12rem;
+  font-size: 2rem;
+  cursor: pointer;
+  @include media-breakpoint-down(md) {
+    right: 0rem;
+    left: 40vw;
+    top: -21rem;
+  }
+  &.hide {
+    opacity: 0;
+  }
+}
+.header_text {
+  font-size: 10rem;
+  font-weight: 800;
+  font-family: $font-body;
+  color: $white;
+  margin-left: -16rem;
+  @include media-breakpoint-down(md) {
+    font-size: 6rem;
+    position: absolute;
+    left: 75vw;
+  }
+}
+
+.list_items_service {
+  border-left: 1px solid rgba($color: #fff, $alpha: 0.5);
+  border-radius: 0;
+  ul {
+    li {
+      background-color: transparent;
+      color: rgba($color: #fff, $alpha: 0.5);
+      border: none;
+      span {
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.scrolling_img {
+  overflow: hidden;
+  height: 400px;
+  // background-color: blue;
+  // position: relative;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
+  img {
+    // height: 200%;
+    width: 100%;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.video_phone {
+  background: url("/static/images/phonevideo.png") no-repeat;
+  background-size: cover;
+  width: 367px;
+  height: 747px;
+  position: relative;
+  background-size: 96%;
+  video {
+    position: absolute;
+    top: -9px; /* Adjust top position */
+    left: 3px; /* Adjust left position */
+  }
+}
+.image_canvas {
+  background: url("/static/images/canvas.png") no-repeat;
+  background-size: cover;
+  width: 530px;
+  height: 730px;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  img {
+    position: absolute;
+    top: 30px; /* Adjust top position */
+    left: 30px; /* Adjust left position */
+    @include media-breakpoint-down(md) {
+      width: 90%;
+    }
+  }
+}
+
+.image_phone_canvas {
+  background: url("/static/images/phone2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 100%;
+  position: relative;
+  padding: 31rem 0;
+  img {
+    position: absolute;
+    top: 3rem; /* Adjust top position */
+    left: 3px; /* Adjust left position */
+  }
+}
+
+.bg_text_h1 {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 9rem;
+  width: 4rem;
+  position: absolute;
+  top: 11rem;
+  left: -13rem;
+  line-height: 9rem;
+  @include media-breakpoint-down(md) {
+    font-size: 4rem;
+    left: 0;
+    width: 2rem;
+    line-height: 5rem;
+    top: -5rem;
+  }
+  &.right_text {
+    left: 50vw;
+    @include media-breakpoint-down(md) {
+      left: 0;
+    }
+  }
+}
+
+.image_canvas_desktop {
+  margin: 50px auto;
+  overflow: hidden;
+  .img01 {
+    margin: 0 auto;
+    // width: 500px;
+    img {
+      background-image: url("/static/images/GENESI/idpremium-webagency-instagram-genesi-post.jpg");
+      background-size: 93% 64%;
+      background-position: 42% 13%;
+      background-repeat: no-repeat;
+      -webkit-transition: background-position 3.5s ease;
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      width: 100%;
+      height: 700px;
+      &:hover {
+        background-position: 42% -132%;
+        position: relative;
+      }
+    }
+  }
+}
+
+.video_tablet {
+  background: url("/static/images/Rettangolo 102.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 747px;
+  position: relative;
+  background-size: 96%;
+  video {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 90%;
+    z-index: 0;
+    border-radius: 2rem;
+    border: 2px solid white;
+  }
+}

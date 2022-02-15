@@ -1,0 +1,69 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Contattaci {% endblock title %}
+
+{% block content %}
+<section id="contact_hero" style="overflow-x: hidden;">
+    <div class="container min-vh-100 d-flex flex-column justify-content-center">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="purple_text">Voui creare la tua brand identity ed espanderla nel mondo digitale?</p>
+                <h1 class="text-white fw-bold" style="font-size: 3.2rem;"> CONTATTACI
+                </h1>
+                <p class="text-white">Vuoi creare la tua brand identity ed espanderla nel mondo digitale?
+                    Puoi contattarci qui:
+                    </p>
+                <form class="text-white-50" action="#" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="email" class="form-label fs-4">Email</label>
+                        <input type="email" name="message_email" class="form-control bg-transparent form-control-lg text-white" id="email"
+                            aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fs-4">Message</label>
+                        <textarea name="message_message" class="form-control bg-transparent text-white" id="message" cols="50" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit" name="Contattaci" value="Contattaci" class="btn primary-btn">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/images/Message_04.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="intersect py-5" style="overflow-x: hidden; background: url('/static/images/section_c_c.png') no-repeat fixed; padding: 0;">
+    <div class="row py-5" style="background: url('/static/images/section_c_c.png') no-repeat fixed; padding-top: 2em; padding-bottom: 2em;"></div>
+</section>
+<section id="" class="py-5" style="overflow-x: hidden;">
+    <div class="container min-vh-100 d-flex flex-column justify-content-center">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="purple_text">Voui creare la tua brand identity ed espanderla nel mondo digitale?</p>
+                <h1 class="text-white fw-bold" style="font-size: 3.2rem;"> LAVORA CON NOI 
+                </h1>
+                <p class="text-white">Vorresti entrare a far parte del Premium Team? Inoltra di seguito la tua candidatura, siamo sempre alla ricerca di personalità giovani e di talento a cui poter concedere un’opportunità!
+                </p>
+                <form class="text-white-50" action="#" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="email" class="form-label fs-4">Email</label>
+                        <input type="email" name="workWithUs_email" class="form-control bg-transparent form-control-lg text-white" id="email"
+                            aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fs-4">Message</label>
+                        <textarea name="workWithUs_message" class="form-control bg-transparent text-white" id="message" cols="50" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit" name="LavoraConNoi" value="LavoraConNoi" class="btn primary-btn">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!-- <img src="/static/images/Message_04.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

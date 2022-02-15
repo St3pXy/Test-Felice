@@ -1,0 +1,28 @@
+#identity {
+  background: url("/static/images/mockup.png") no-repeat;
+  background-size: 100%;
+  background-position: 40% 100%;
+  @include media-breakpoint-down(md) {
+    background-size: 174%;
+    background-position: 40% -5%;
+  }
+}
+
+.card_border_bar {
+  margin-top: 4rem;
+  border-top: 5px solid $color_primary;
+  width: 30px;
+}
+
+#team {
+  & > div {
+    transition: all 0.2s ease-in;
+  }
+}
+// .slick-center {
+//   // margin-left: -1%;
+//   .card-img-top {
+//     width: 115%;
+//     margin-left: -10%;
+//   }
+// }

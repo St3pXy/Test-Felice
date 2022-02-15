@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prenota Consulenza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+
+
+    <style>
+
+        body{
+            background-color: #171616;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            font-family: 'Titillium Web', sans-serif;
+
+            overflow: auto;
+        }
+
+        label {
+            margin: 0;
+        }
+
+        input {
+            margin: 0;
+        }
+
+        .content{
+            position:absolute;
+            left:50%; 
+            top:50%; 
+            transform: translate(-50%, -50%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            text-align: center;
+        }
+
+        .inputform{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .textinput {
+            padding: 1em;
+            
+            /*padding-left: 7em;
+            padding-right: 7em;*/
+
+            width: 23em;
+            height: auto;
+
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1.5em;
+            margin-top: 0.5em;
+            border: 0.5px solid gray;
+            border-radius: 0.5em;
+
+            background-color: transparent;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        .dateinput{
+            padding: 1em;
+            padding-left: 4.5em;
+            padding-right: 4.5em;
+            margin: 1em;
+            border: 0.5px solid gray;
+            border-radius: 0.5em;
+
+            background-color: transparent;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        .label_input{
+            margin-left: 1em;
+        }
+
+        .btn {
+            flex: 1 1 auto;
+            margin: 10px;
+            padding: 20px 30px;
+            text-align: center;
+            /* text-transform: uppercase; */
+            font-weight: bold;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: black;
+            /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 20px #eee;
+            */
+            border: none;
+            border-radius: 30px;
+        }
+
+        /* Demo Stuff End -> */
+
+        /* <- Magic Stuff Start */
+
+        .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+        }
+
+        .btn-1 {
+            background-image: linear-gradient(
+                to right,
+                #994c8c 0%,
+                #764ba2 35%,
+                #c252af 65%,
+                #8e37d7 100%
+            );
+        }
+
+
+        .primary-btn {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            background-image: linear-gradient(to right, #994c8c, #764ba2, #c252af, #8e37d7);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+            margin-left: 0;
+        }
+        .primary-btn:hover {
+            background-position: 100% 0;
+            moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .primary-btn:focus {
+            outline: none;
+        }
+
+        @media (max-width: 767.98px) {
+            #home_slider > div,
+            #home_slider button {
+                padding-top: 7rem;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="content">
+        <h1>Prenota la tua consulenza gratuita</h1>
+        <form action="#" method="post" enctype="multipart/form-data" class="inputform">
+            
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="name" class="label_input">Nome</label>
+                <input type="text" name="name" class="textinput" id="name" required>
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="surname" class="label_input">Cognome</label>
+                <input type="text" name="surname" class="textinput" id="surname" required>
+            
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="insta_name" class="label_input">Instagram URL</label>
+                <input type="text" name="insta_name" class="textinput" id="insta_name">
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="email" class="label_input">Email</label>
+                <input type="email" name="email" class="textinput" id="email" required>
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="company" class="label_input">Azienda</label>
+                <input type="text" name="company" class="textinput" id="company">
+            
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="company_website" class="label_input">Sito Web Aziendale</label>
+                <input type="text" name="company_website" class="textinput" id="company_website">
+            
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="mess" class="label_input">Messaggio</label>
+                <textarea rows="4" cols="50" name="mess" class="textinput" id="mess" ></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <label for="date" class="label_input">Data</label>
+                <input type="datetime-local" name="date" class="dateinput" id="date" style="color: white;" required>
+            </div>
+            
+            <button class="btn btn-1 css-selector glow primary-btn" type="submit" name="RichiediConsulenza" value="RichiediConsulenza" >Send Request</button>
+        </form>
+    </div>
+      
+</body>
+</html>

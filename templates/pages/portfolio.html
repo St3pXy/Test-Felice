@@ -1,0 +1,75 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Portfolio {% endblock title %}
+
+{% block content %}
+<section class="pt-5">
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="static/images/MDMFDPSD.png" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <a href="/portfolio/genesi"><img class="img-responsive" src="static/images/idpremium-webagency-shooting-farfetch-social-instagram.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="static/images/MDMFDPSD.png" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <a href="/portfolio/polo-club"><img class="img-responsive" src="static/images/mockup_montec.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <a href="/portfolio/snipes"><img class="img-responsive" src="static/images/mockup_snipes.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="static/images/MDMFDPSD.png" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <a href="/portfolio/farfetch"><img class="img-responsive" src="static/images/PSDMarchNook203.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="static/images/MDMFDPSD.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg_sec" style=" background: url(/static/images/section_c_c.png); background-size: cover; background-repeat: no-repeat; padding-top: 2em; padding-bottom: 2em;">
+    <div class="container py-md-5">
+        <div class="row py-md-5 my-md-5 align-items-center">
+            <div class="col-md-8">
+                <div class="d-flex align-items-center purple_text">
+                    <!-- <div class="dash dash-purple"></div> -->
+                    <p class="text-uppercase">Get Featured</p>
+                </div>
+                <div class="text-white">
+                    <h1 class="fw-bold display-1 white_stroke">Prenota</h1>
+                    <h1 class="fw-bold display-1">Una consulenza</h1>
+                    <p class="pe-md-5 py-md-4 fs-5 text-white-50">
+                        Il nostro reparto management si <br />
+                        occupa di curare e gestire a 360 gradi l’immagine di talenti unici.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="{{ url_for('prenota_consulenza' ) }}" class="btn primary-btn"
+                    style="display: flex; justify-content: center; align-items: center;">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

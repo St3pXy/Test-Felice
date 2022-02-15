@@ -1,0 +1,32 @@
+#contact_hero {
+  padding-top: 5rem;
+  overflow-x: hidden;
+  background: url("/static/images/fingerprint.png") no-repeat;
+  background-size: 75%;
+  background-position: 186% 100%;
+  @include media-breakpoint-down(md) {
+    padding-top: 5rem;
+  }
+
+  .row {
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+    }
+  }
+  img {
+    width: 120%;
+    @include media-breakpoint-down(md) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+    }
+  }
+}
+
+.intersect {
+  padding: 7rem 0;
+  background: url("/static/images/section_c.png") no-repeat fixed;
+  background-size: cover;
+}

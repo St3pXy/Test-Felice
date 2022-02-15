@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {% block css %}{% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="./../static/images/homeicon.png">
+
+    <style>
+
+        .hovereffect_nohover{
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+            background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+        }
+        .hovereffect_nohover .overlay:before {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            border: 1px solid #fff;
+            content: "";
+            opacity: 0;
+            filter: alpha(opacity=0);
+            transition: opacity 0.35s, transform 0.45s;
+            transform: translate3d(-20px, 0, 0);
+        }
+        .hovereffect_nohover img {
+            display: block;
+            position: relative;
+            max-width: none;
+            width: calc(100% + 60px);
+            transition: opacity 0.35s, transform 0.45s;
+            transform: translate3d(-40px, 0, 0);
+        }
+
+        .hovereffect {
+        width: 100%;
+        height: 100%;
+        float: center;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        /*background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);*/
+        }
+
+        .hovereffect .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        padding: 3em;
+        text-align: center;
+        }
+        .hovereffect .overlay:before {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+        border: 1px solid #fff;
+        content: "";
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition: opacity 0.35s, transform 0.45s;
+        transform: translate3d(1px, 0, 0);
+        }
+        .hovereffect img {
+        display: block;
+        position: relative;
+        max-width: none;
+        width: calc(100% + 60px);
+        height: auto;
+        transition: opacity 0.35s, transform 0.45s;
+        transform: translate3d(1px, 0, 0);
+        
+        right: 40px;
+        }
+        .hovereffect img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        }
+        .hovereffect h2, .hovereffect .h2 {
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+            font-size: 17px;
+            background-color: transparent;
+            padding: 15% 0 10px 0;
+            text-align: left;
+        }
+
+        .hovereffect a {
+            color: #fff;
+            opacity: 1;
+            filter: alpha(opacity=0);
+
+            width: calc(100% + 60px);
+            transition: opacity 0.35s, transform 0.45s;
+            transform: translate3d(1px, 0, 0);
+        }
+
+        .hovereffect_polo {
+        width: 100%;
+        height: 100%;
+        float: center;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        /*background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);*/
+        }
+
+        .hovereffect_polo .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        padding: 3em;
+        text-align: center;
+        }
+        .hovereffect_polo .overlay:before {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+        border: 1px solid #fff;
+        content: "";
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition: opacity 0.35s, transform 0.45s;
+        transform: translate3d(1px, 0, 0);
+        }
+        .hovereffect_polo img {
+        display: block;
+        position: relative;
+        max-width: none;
+        width: calc(100% + 60px);
+        height: auto;
+        transition: opacity 0.35s, transform 0.45s;
+        transform: translate3d(40px, 0, 0);
+        
+        right: 40px;
+        }
+        .hovereffect_polo img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        }
+        .hovereffect_polo h2, .hovereffect .h2 {
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+            font-size: 17px;
+            background-color: transparent;
+            padding: 15% 0 10px 0;
+            text-align: left;
+        }
+
+        .hovereffect_polo a {
+            color: #fff;
+            opacity: 1;
+            filter: alpha(opacity=0);
+
+            width: calc(100% + 60px);
+            transition: opacity 0.35s, transform 0.45s;
+            transform: translate3d(1px, 0, 0);
+        }
+
+        .portfolio_div_el{
+            width: 100%;
+            height: auto;
+        }
+
+
+        model-viewer#player_6 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_1 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_2 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_3 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_4 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_5 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_7 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_8 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_9 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_10 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_11 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_12 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_13 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_14 {
+            --poster-color: transparent;
+        }
+        model-viewer#player_15 {
+            --poster-color: transparent;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    {% include 'layouts/partials/header.html' %}
+    {% include 'layouts/partials/sidebar.html' %}
+    <main class="main__content bg-dark">
+        {% block content %}{% endblock %}
+    </main>
+    {% include 'layouts/partials/footer.html' %}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {% block js %}{% endblock %}
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
